@@ -1,0 +1,27 @@
+package main
+
+import ("fmt")
+
+func ucln(a, b int) int {
+	if a == b {
+		return a
+	} else if a > b {
+		return (ucln(a-b, b))
+	} else {
+		return (ucln(a, b-a))
+	}
+}
+
+func main() {
+	var a, b, c int
+	fmt.Println("nhap s1:")
+	fmt.Scanln(&a)
+	fmt.Println("nhap s2:")
+	fmt.Scanln(&b)
+	fmt.Println("nhap s3:")
+	fmt.Scanln(&c)
+	uc := ucln(a, b)
+	kq := ucln(uc, c)
+	fmt.Println(kq)
+
+}

@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	a := 1
+	b := 6.9
+	c := complex(3, 4)
+	d := "Hello World"
+	fmt.Printf("%d\n", a)
+	fmt.Printf("%f\n", b)
+	fmt.Printf("%v\n", c)
+	fmt.Printf("%s", d)
+}

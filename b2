@@ -10,7 +10,7 @@ func ucln(a, b int) int {
 	} else {
 		return (ucln(a, b-a))
 	}
-}
+}   
 
 func main() {
 	var a, b, c int
